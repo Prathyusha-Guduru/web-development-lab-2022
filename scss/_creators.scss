@@ -63,7 +63,8 @@
 
       &:hover {
         .big-img {
-          display: unset;
+          visibility: unset;
+          opacity: 100%;
         }
       }
 
@@ -72,10 +73,13 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition-duration: 500ms;
 
         // width: 450px;
         height: 60vh;
+        border-radius: 20px;
       }
 
       .profile {
