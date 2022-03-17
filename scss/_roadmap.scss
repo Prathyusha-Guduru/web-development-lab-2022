@@ -5,6 +5,10 @@
   // align-items: center;
   justify-content: center;
 
+  .execution-video {
+    border-radius: 8px;
+  }
+
   hr {
     color: #ffffff;
     height: 1px;
@@ -191,6 +195,10 @@
   }
   .roadmap {
     .phase-card-row {
+      video {
+        max-width: 100%;
+      }
+
       .roadmap-ele-1 {
         .phase-card {
           margin-bottom: 300px;
