@@ -183,17 +183,44 @@
 }
 
 @media only screen and (max-width: 992px) {
+  .gratitude-cc,
+  .gratitude-fish,
+  .gratitude-dollar,
+  .gratitude-eth {
+    width: 90%;
+  }
   .roadmap {
     .phase-card-row {
       .roadmap-ele-1 {
         .phase-card {
           margin-bottom: 300px;
+          img {
+            width: 90%;
+          }
         }
       }
 
       .roadmap-ele-2 {
         .phase-card {
           margin-top: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .roadmap {
+    .phase-card-row {
+      .roadmap-ele-1 {
+        .phase-card {
+          margin-bottom: 200px;
+        }
+      }
+
+      .roadmap-ele-2 {
+        .phase-card {
+          margin-top: 200px;
         }
       }
     }
