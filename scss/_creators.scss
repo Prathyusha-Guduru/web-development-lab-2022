@@ -57,6 +57,13 @@
             text-align: center;
             // background-color: rgba(255, 255, 255, 0.4);
 
+            // .cof-1 {
+            //     // background-color: lawngreen;
+            //     height: 200px;
+            //     width: 200px;
+            //     background-image: url("/img/creators/chappapa.png");
+            // }
+
             &:first-child {
                 margin-right: 43px;
             }
@@ -69,21 +76,22 @@
             }
 
             .big-img {
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                position: absolute;
+                // top: 50%;
+                // left: 50%;
+                // transform: translate(-50%, -50%);
                 visibility: hidden;
                 opacity: 0;
                 transition-duration: 500ms;
-
+                z-index: 2;
                 // width: 450px;
-                height: 60vh;
+                height: 30vh;
                 border-radius: 8px;
             }
 
             .profile {
                 width: 90%;
+                z-index: 1;
             }
 
             .name {
