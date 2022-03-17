@@ -19,7 +19,7 @@
   <meta name="twitter:title" content="Fishman's Laboratory" />
   <meta name="twitter:description"
     content="An NFT collection of 7000 Fish trying to escape Dr.Fishman’s evil plans, heading towards the Opensea!" />
-  <meta name="twitter:image" content="https://fishmanslaboratory.io/img/fml-meta-img.png">
+  <meta name="twitter:image" content="https://fishmanslaboratory.ioimg/fml-meta-img.png">
 
   <!-- Outfit google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -52,6 +52,32 @@
 </head>
 
 <body onload="onLoad()">
+  <style>
+    /*
+      Rollover Image
+     */
+    .figure {
+      position: relative;
+      width: 360px;
+      /* can be omitted for a regular non-lazy image */
+      max-width: 100%;
+    }
+
+    .figure img.image-hover {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 10%;
+      bottom: 0;
+      object-fit: contain;
+      opacity: 0;
+      transition: opacity .2s;
+    }
+
+    .figure:hover img.image-hover {
+      opacity: 1;
+    }
+  </style>
   <div id="loading"></div>
 
   <main>
@@ -261,15 +287,15 @@
 
                 <!-- <img src="img/wefef.png" alt=""> -->
 
-                <img class="rellax-1" src="/img/roadmap/gratitude-cc.png" alt="">
-                <img class="rellax-2" src="/img/roadmap/gratitude-dollar.png" alt="">
-                <img class="rellax-3" src="/img/roadmap/gratitude-eth.png" alt="">
-                <img class="rellax" src="/img/roadmap/gratitude-fish.png" alt="">
+                <img class="rellax-1" src="img/roadmap/gratitude-cc.png" alt="">
+                <img class="rellax-2" src="img/roadmap/gratitude-dollar.png" alt="">
+                <img class="rellax-3" src="img/roadmap/gratitude-eth.png" alt="">
+                <img class="rellax" src="img/roadmap/gratitude-fish.png" alt="">
 
-                <!-- <img src="/img/roadmap/gratitude-cc.png" alt=""> -->
-                <!-- <img src="/img/roadmap/gratitude-dollar.png" alt=""> -->
-                <!-- <img src="/img/roadmap/gratitude-eth.png" alt=""> -->
-                <!-- <img src="/img/roadmap/gratitude-fish.png" alt=""> -->
+                <!-- <img src="img/roadmap/gratitude-cc.png" alt=""> -->
+                <!-- <img src="img/roadmap/gratitude-dollar.png" alt=""> -->
+                <!-- <img src="img/roadmap/gratitude-eth.png" alt=""> -->
+                <!-- <img src="img/roadmap/gratitude-fish.png" alt=""> -->
 
               </div>
               <div class="col-lg-6 d-flex justify-content-center">
@@ -302,10 +328,23 @@
                       <li>Fishfests: Online/Offline holders exclusive events.</li>
                     </ul>
                   </div>
+
                 </div>
-                <div class="staking-formulae-wrap row">
-                  <img src="img/roadmap/Staking Formulae.png" alt="">
+                <!-- <div class="ultra-wrap">
+                  <div class="staking-formuale"><img src="img/roadmap/staking-formulae.png" alt=""
+                      class="staking-formuale-imgg">
+
+                  </div>
+                  <div class="empty-box"></div>
+                </div> -->
+
+                <div class="phase-card staking">
+                  <img src="img/roadmap/staking-formulae.png" alt="">
                 </div>
+
+
+
+
               </div>
 
 
@@ -364,12 +403,12 @@
     </section>
 
     <section id="nfts">
-      <img src="img/nfts/nft-01.png" alt="Fishma's nft images" />
-      <img src="img/nfts/nft-02.png" alt="Fishma's nft images" />
-      <img src="img/nfts/nft-03.png" alt="Fishma's nft images" />
-      <img src="img/nfts/nft-04.png" alt="Fishma's nft images" />
-      <img src="img/nfts/nft-05.png" alt="Fishma's nft images" />
-      <img src="img/nfts/nft-06.png" alt="Fishma's nft images" />
+      <img src="img/nfts/1.png" alt="Fishma's nft images" />
+      <img src="img/nfts/2.png" alt="Fishma's nft images" />
+      <img src="img/nfts/3.png" alt="Fishma's nft images" />
+      <img src="img/nfts/4.png" alt="Fishma's nft images" />
+      <img src="img/nfts/5.png" alt="Fishma's nft images" />
+      <img src="img/nfts/6.png" alt="Fishma's nft images" />
     </section>
 
     <section class="faq py-5">
@@ -461,10 +500,16 @@
       <img src="img/creators/creators.png" alt="creators text" class="creators-text" />
       <!-- <h2 class="text-center mt-5">creators</h2> -->
       <div class="user-card-container">
-        <div class="user-card">
-          <div class="creator-img-wrap">
-            <img class="profile" src="img/creators/chap-fish.png" alt="" />
-            <img class="big-img" src="img/creators/chap-rl.png" alt="">
+        <div class="user-card d-flex flex-column justify-content-center align-items-center">
+          <!-- <div class=" creator-img-wrap">
+            <img class="creator-avtar" src="img/creators/chap-fish.png" alt="" />
+            <img class="creator-img" src="img/creators/chap-rl.png" alt="">
+          </div> -->
+          <div class="figure">
+            <img class="image-main" src="img/creators/chap-fish.png" srcset="img/creators/chap-fish.png" width="300"
+              alt="Demo image 1">
+            <img class="image-hover" src="img/creators/chap-rl.png" srcset="img/creators/chap-rl.png" width="300"
+              alt="Demo image 2">
           </div>
           <p class="name">Chappapa</p>
           <p class="rolse">Founder</p>
@@ -483,8 +528,12 @@
           </div>
         </div>
         <div class="user-card">
-          <img class="profile" src="img/creators/orange.png" alt="" />
-          <img class="big-img" src="img/creators/orange-rl.jpeg" alt="">
+          <div class="figure">
+            <img class="image-main" src="img/creators/orange-fish.png" srcset="img/creators/orange-fish.png" width="300"
+              alt="Demo image 1">
+            <img class="image-hover" src="img/creators/orange-rll.png" srcset="img/creators/orange-rll.png" width="300"
+              alt="Demo image 2">
+          </div>
           <p class="name">Orange</p>
           <p class="role">Co-Founder</p>
           <p class="des">Design & Technical Lead, Architect <br />
@@ -523,7 +572,7 @@
           </div>
 
           <div class="team-card col-lg-3 col-md-4 col-sm-2">
-            <h4>Sathish</h4>
+            <h4>Satish</h4>
             <p>Designer</p>
           </div>
 
@@ -534,135 +583,143 @@
 
           <div class="team-card col-lg-3 col-md-4 col-sm-2">
             <h4>Raul</h4>
-            <p>Smart Contract</p>
+            <p>Website</p>
           </div>
 
           <div class="team-card col-lg-3 col-md-4 col-sm-2">
             <h4>Harman</h4>
-            <p>Smart Contract</p>
+            <p>Blockchain</p>
           </div>
 
           <div class="team-card col-lg-3 col-md-4 col-sm-2">
             <h4>Rahi</h4>
-            <p>Smart Contract</p>
+            <p>Blockchain</p>
           </div>
         </div>
 
-        <h3 class="d-flex justify-content-center mt-5">Moderators</h3>
+        <h3 class="d-flex justify-content-center mt-5">moderators</h3>
         <div class="team-row row d-flex justify-content-center flex-wrap pb-5">
 
           <div class=" team-card col-lg-3 col-md-4 col-sm-2 ">
             <h4>Shades Dior</h4>
-            <p>FML Administrator</p>
+            <p>Administrator</p>
           </div>
 
           <div class="team-card col-lg-3 col-md-4 col-sm-2">
-            <h4>Chimken</h4>
-            <p>FML Collab Manager</p>
+            <h4>Blastepipo</h4>
+            <p>Manager</p>
           </div>
 
           <div class="team-card col-lg-3 col-md-4 col-sm-2">
             <h4>Emil </h4>
-            <p>FML Mod</p>
-          </div>
-
-          <div class="team-card col-lg-3 col-md-4 col-sm-2">
-            <h4>FragaX</h4>
-            <p>FML Manager</p>
+            <p>Manager</p>
           </div>
 
           <div class="team-card col-lg-3 col-md-4 col-sm-2">
             <h4>Jasiono</h4>
-            <p></p>
+            <p>Manager</p>
+          </div>
+
+          <div class="team-card col-lg-3 col-md-4 col-sm-2">
+            <h4>FragaX</h4>
+            <p>Manager</p>
+          </div>
+
+          <div class="team-card col-lg-3 col-md-4 col-sm-2">
+            <h4>Profka</h4>
+            <p>Manager</p>
+          </div>
+
+          <div class="team-card col-lg-3 col-md-4 col-sm-2">
+            <h4>Rockclimber000</h4>
+            <p>Manager</p>
+          </div>
+
+          <div class="team-card col-lg-3 col-md-4 col-sm-2">
+            <h4>Agu</h4>
+            <p>Head Moderator</p>
+          </div>
+
+          <div class=" team-card col-lg-3 col-md-4 col-sm-2 ">
+            <h4>Helos</h4>
+            <p>Head Moderator
+            </p>
           </div>
 
           <div class="team-card col-lg-3 col-md-4 col-sm-2">
             <h4>K.vin</h4>
-            <p>FML</p>
+            <p>Head Moderator
+            </p>
           </div>
 
           <div class="team-card col-lg-3 col-md-4 col-sm-2">
-            <h4>Profka </h4>
-            <p>FML Mod</p>
-          </div>
-
-          <div class="team-card col-lg-3 col-md-4 col-sm-2">
-            <h4>Alma </h4>
-            <p>Collab manager</p>
-          </div>
-
-          <div class=" team-card col-lg-3 col-md-4 col-sm-2 ">
-            <h4>"Kawzy"</h4>
-            <p>FML MOD</p>
+            <h4>Kawzy </h4>
+            <p>Moderator</p>
           </div>
 
           <div class="team-card col-lg-3 col-md-4 col-sm-2">
             <h4>Big Nerd </h4>
-            <p>FML MOD</p>
+            <p>Moderator</p>
           </div>
 
-          <div class="team-card col-lg-3 col-md-4 col-sm-2">
-            <h4>Chimken </h4>
-            <p>FML Collab Manager</p>
-          </div>
-
-          <div class="team-card col-lg-3 col-md-4 col-sm-2">
+          <div class=" team-card col-lg-3 col-md-4 col-sm-2 ">
             <h4>CrypD </h4>
-            <p>FML Mod</p>
-          </div>
-
-          <div class=" team-card col-lg-3 col-md-4 col-sm-2 ">
-            <h4>Dany D.I.O. </h4>
-            <p>FML Mod</p>
+            <p>Moderator</p>
           </div>
 
           <div class="team-card col-lg-3 col-md-4 col-sm-2">
-            <h4>ghost2sleep </h4>
-            <p>FML Mod</p>
+            <h4>Dany D.I.O.</h4>
+            <p>Moderator</p>
           </div>
 
           <div class=" team-card col-lg-3 col-md-4 col-sm-2 ">
-            <h4>Helos </h4>
-            <p>FML Mod (THE EVIL ONE)</p>
+            <h4>ghost2sleep </h4>
+            <p>Moderator</p>
           </div>
 
           <div class="team-card col-lg-3 col-md-4 col-sm-2">
             <h4>Mantecop</h4>
-            <p>FML</p>
+            <p>Moderator</p>
           </div>
 
           <div class="team-card col-lg-3 col-md-4 col-sm-2">
             <h4>Minhyeong </h4>
-            <p>FML Mod </p>
+            <p>Moderator </p>
           </div>
 
           <div class="team-card col-lg-3 col-md-4 col-sm-2">
-            <h4>Nikkei Daddy </h4>
-            <p>FML</p>
+            <h4>Sully </h4>
+            <p>Moderator</p>
           </div>
           <div class=" team-card col-lg-3 col-md-4 col-sm-2 ">
-            <h4>Sully </h4>
-            <p>FML Mod</p>
+            <h4>SupSethGt</h4>
+            <p>Moderator</p>
           </div>
 
           <div class="team-card col-lg-3 col-md-4 col-sm-2">
-            <h4>SupSethGt </h4>
-            <p>FML Mod</p>
-          </div>
-
-          <div class="team-card col-lg-3 col-md-4 col-sm-2">
-            <h4>Taralang BIASALAH </h4>
-            <p>FML Mod</p>
+            <h4>Taralang </h4>
+            <p>Moderator</p>
           </div>
 
           <div class="team-card col-lg-3 col-md-4 col-sm-2">
             <h4>Vsevolod </h4>
-            <p>FML Mod</p>
+            <p>Moderator</p>
           </div>
 
           <div class="team-card col-lg-3 col-md-4 col-sm-2">
             <h4>ZYY </h4>
-            <p>FML</p>
+            <p>Moderator</p>
+          </div>
+
+
+          <div class="team-card col-lg-3 col-md-4 col-sm-2">
+            <h4>Alma </h4>
+            <p>Collab Manager</p>
+          </div>
+
+          <div class="team-card col-lg-3 col-md-4 col-sm-2">
+            <h4>Chimken </h4>
+            <p>Collab Manager</p>
           </div>
 
         </div>
