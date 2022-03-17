@@ -177,13 +177,20 @@
         background-color: #000 !important;
 
         .user-card-container {
-            padding: 50px;
+            padding: 50px 0;
             transform: unset;
             flex-direction: column;
+            overflow-x: hidden;
             // background-color: lightblue;
             //  background-color: aqua;
             // flex-direction: column;
             // gap: 0px !important;
+        }
+
+        .user-card {
+            &:first-child {
+                margin-right: 0 !important;
+            }
         }
     }
 
