@@ -55,7 +55,6 @@
   <div id="loading"></div>
 
   <main>
-    <!-- HEADER -->
 
     <section class="hero_section">
       <!-- <header></header> -->
@@ -151,7 +150,7 @@
           </div>
       </header>
 
-      <video src="img/bg.mp4" playsinline autoplay loop muted></video>
+      <video src="img/bg.mp4" playsinline autoplay muted loop muted></video>
 
       <div class="hero_section_bottom">
         <div class="container-fluid hero_section_bottom_wrapper">
@@ -174,24 +173,15 @@
       </div>
     </section>
 
-    <!-- <div class="about-text-bg">
-        <div class="line1">
-          <h1>Metaverse Metaverse Metaverse</h1>
-        </div>
-        <div class="line2">
-          <h1>Metaverse Metaverse Metaverse</h1>
-        </div>
-      </div> -->
-
     <section class="about-bg" id="about" style="overflow-x: hidden">
       <!-- <h1 class="metaverse_bg">METAVERSE METAVERSE METAVERSE</h1> -->
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-4 make-center extra-video-wrapper">
-            <video src="img/animated fish.mp4" playsinline autoplay loop muted id="fish-vid"></video>
+            <video src="img/animated fish.mp4" playsinline autoplay muted loop muted id="fish-vid"></video>
 
             <!-- <div class="" data-aos="fade-right" data-aos-delay="500" data-ease="ease-in">
-              <video src="img/export.mp4" autoplay loop ></video>
+              <video src="img/export.mp4" autoplay muted loop ></video>
             </div> -->
           </div>
           <div class="col-sm-12 col-md-1"></div>
@@ -260,29 +250,21 @@
               </div>
 
               <div class="col-lg-6 d-flex align-items-center justify-content-center">
-                <video src="img/roadmap/Origin.mp4" loop autoplay playsinline height="450"></video>
+                <video src="img/roadmap/Origin.mp4" loop autoplay muted playsinline height="450"></video>
               </div>
 
             </div>
 
 
             <div class="roadmap-ele-2 row gratitude-row" id="gratitude-row">
+              <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                
+                <img src="img/wefef.png" alt="">
 
-
-              <div class="col-lg-6 d-flex justify-content-center align-items-center parallex-wrapper">
-                <!-- <img src="/img/roadmap/reference.png" alt="" height="500"> -->
-
-                <img src="/img/roadmap/gratitude-fish.png" alt="" class="gratitude-fish">
+                <!-- <img src="/img/roadmap/gratitude-fish.png" alt="" class="gratitude-fish">
                 <img src="/img/roadmap/gratitude-cc.png" alt="" class="gratitude-cc">
                 <img src="/img/roadmap/gratitude-dollar.png" alt="" class="gratitude-dollar">
-                <img src="/img/roadmap/gratitude-eth.png" alt="" class="gratitude-eth">
-
-
-                <!-- <img src="/img/roadmap/grat-fish.png" alt="" height="300" class="gratitude-fish">
-                <img src="/img/roadmap/grat-cc.png" alt="" height="200" class="gratitude-cc">
-                <img src="/img/roadmap/grat-dollar.png" alt="" height="200" class="gratitude-dollar">
-                <img src="/img/roadmap/grat-eth.png" alt="" height="200" class="gratitude-eth"> -->
-
+                <img src="/img/roadmap/gratitude-eth.png" alt="" class="gratitude-eth"> -->
 
               </div>
               <div class="col-lg-6 d-flex justify-content-center">
@@ -319,7 +301,7 @@
               </div>
 
               <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                <video src=" img/roadmap/Initation.mp4" loop autoplay playsinline height="450" width="450"></video>
+                <video src=" img/roadmap/Initation.mp4" loop autoplay muted playsinline height="450" width="450"></video>
               </div>
 
             </div>
@@ -329,7 +311,7 @@
 
 
               <div class="col-lg-6 d-flex justify-content-center align-items-center video-wrap">
-                <video src="img/roadmap/Execution.mp4" class="execution-video" loop autoplay playsinline width="550"></video>
+                <video id="vid" src="img/roadmap/Execution.mp4" class="execution-video" loop autoplay muted playsinline width="550"></video>
               </div>
               <div class="col-lg-6 d-flex justify-content-center">
                 <div class="phase-card">
@@ -763,6 +745,10 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
+
+document.getElementById('vid').play();
+
+
     $("#nfts").slick({
       infinite: true,
       slidesToShow: 4,
