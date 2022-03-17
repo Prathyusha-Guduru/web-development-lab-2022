@@ -174,11 +174,29 @@
     }
   }
 
-  .roadmap-ele-2 {
-    img {
-      max-width: 450px;
-      width: 100%;
-    }
+  // .roadmap-ele-2 {
+  //   img {
+  //     max-width: 450px;
+  //     width: 100%;
+  //   }
+  // }
+}
+
+.new-parallax-image-container {
+  // background-color: #fff;
+  position: relative;
+
+  img {
+    position: absolute;
+    // position: relative;
+    // top: 50%;
+    left: 30%;
+    width: 340px;
+    // transform: translate(-100%, -100%);
+  }
+
+  .rellax {
+    transform: translateX(-23%);
   }
 }
 
@@ -202,5 +220,30 @@
 
   .roadmap-ele-4 {
     flex-direction: column-reverse;
+  }
+
+  .new-parallax-image-container {
+    // overflow: hidden;
+    height: 300px;
+    // transform: translate(-130px, 160px);
+    transform: translate(0px, 120px);
+
+    img {
+      width: 250px;
+    }
+
+    .rellax {
+      // position: absolute;
+      // top: -30%;
+      // left: 65%;
+      transform: translate(10px, 0);
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .new-parallax-image-container {
+    height: 230px;
+    transform: translate(-40px, 30px);
   }
 }

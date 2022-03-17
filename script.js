@@ -229,21 +229,21 @@ function closeMenu() {
 //     .to(".gratitude-fish", 1, { y: -50 }, "-=1")
 //     .to(".roadmap-ele-3", 1, { top: "0%" }, "-=1");
 
-timeline
-  .fromTo(".gratitude-cc", { y: 0 }, { y: -200, duration: 1 })
-  .fromTo(".gratitude-dollar", { y: 0 }, { y: -200, duration: 1 }, "-=1")
-  .fromTo(".gratitude-eth", { y: 0 }, { y: -200, duration: 1 }, "-=1")
-  .fromTo(".gratitude-fish", { y: 0 }, { y: -100, duration: 1 }, "-=1");
+// timeline
+//   .fromTo(".gratitude-cc", { y: 0 }, { y: -200, duration: 1 })
+//   .fromTo(".gratitude-dollar", { y: 0 }, { y: -200, duration: 1 }, "-=1")
+//   .fromTo(".gratitude-eth", { y: 0 }, { y: -200, duration: 1 }, "-=1")
+//   .fromTo(".gratitude-fish", { y: 0 }, { y: -100, duration: 1 }, "-=1");
 // .fromTo(".gratitude-dollar", 1, { y: -200 }, "-=1")
 // .fromTo(".gratitude-eth", 1, { y: -200 }, "-=1")
 // .fromTo(".gratitude-fish", 1, { y: -50 }, "-=1")
 // .fromTo(".roadmap-ele-3", 1, { top: "0%" }, "-=1");
 
-let scene = new ScrollMagic.Scene({
-  triggerElement: "#gratitude-row",
-  duration: "100%",
-  triggerHook: 0,
-})
-  .setTween(timeline)
-  .setPin("#gratitude-row")
-  .addTo(controller);
+// let scene = new ScrollMagic.Scene({
+//   triggerElement: "#gratitude-row",
+//   duration: "100%",
+//   triggerHook: 0,
+// })
+//   .setTween(timeline)
+//   .setPin("#gratitude-row")
+//   .addTo(controller);

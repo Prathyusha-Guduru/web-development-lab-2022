@@ -257,14 +257,19 @@
 
 
             <div class="roadmap-ele-2 row gratitude-row" id="gratitude-row">
-              <div class="col-lg-6 d-flex justify-content-center align-items-center">
+              <div class="col-lg-6 new-parallax-image-container">
                 
-                <img src="img/wefef.png" alt="">
+                <!-- <img src="img/wefef.png" alt=""> -->
 
-                <!-- <img src="/img/roadmap/gratitude-fish.png" alt="" class="gratitude-fish">
-                <img src="/img/roadmap/gratitude-cc.png" alt="" class="gratitude-cc">
-                <img src="/img/roadmap/gratitude-dollar.png" alt="" class="gratitude-dollar">
-                <img src="/img/roadmap/gratitude-eth.png" alt="" class="gratitude-eth"> -->
+                <img class="rellax-1" src="/img/roadmap/gratitude-cc.png" alt="">
+                <img class="rellax-2" src="/img/roadmap/gratitude-dollar.png" alt="">
+                <img class="rellax-3" src="/img/roadmap/gratitude-eth.png" alt="">
+                <img class="rellax" src="/img/roadmap/gratitude-fish.png" alt="">
+
+                <!-- <img src="/img/roadmap/gratitude-cc.png" alt=""> -->
+                <!-- <img src="/img/roadmap/gratitude-dollar.png" alt=""> -->
+                <!-- <img src="/img/roadmap/gratitude-eth.png" alt=""> -->
+                <!-- <img src="/img/roadmap/gratitude-fish.png" alt=""> -->
 
               </div>
               <div class="col-lg-6 d-flex justify-content-center">
@@ -344,13 +349,7 @@
 
             </div>
           </div>
-
-
-
-
         </div>
-
-
       </div>
       </div>
 
@@ -746,9 +745,49 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
   <script>
 
-document.getElementById('vid').play();
+  // var rellax = new Rellax('.rellax', {
+  //   speed: 1,
+  //   center: true,
+  //   wrapper: null,
+  //   round: true,
+  //   vertical: true,
+  //   horizontal: true
+  // });
+
+  var rellax_1 = new Rellax('.rellax-1', {
+    speed: 7,
+    center: true,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: true
+  });
+
+  var rellax_2 = new Rellax('.rellax-2', {
+    speed: 5,
+    center: true,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: true
+  });
+
+  var rellax_3 = new Rellax('.rellax-3', {
+    speed: 3,
+    center: true,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: true
+  });
+
+
+// document.getElementById('vid').play();
 
 
     $("#nfts").slick({
