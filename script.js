@@ -13,7 +13,7 @@ var odometer = {
                 // fraction = $this.hasClass('last_value_fraction'),
                 colCount = odometerValue.length - 1;
 
-            // if (fraction)
+            // if (fraction) test
             // 	colCount -= 1;
 
             for (i = 0; i < colCount; i++) {
